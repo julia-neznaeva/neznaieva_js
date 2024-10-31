@@ -1,62 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="whatTimeIsIt.js"></script>
+    <script src="calculation.js"></script>
+    <script src="task3.js"></script>
+    <script src="task4.js"></script>
+    <script src="task5.js"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="whatTimeIsIt.js"></script>
-  <script src="calculation.js"></script>
-  <script src="task3.js"></script>
-  <script src="task4.js"></script>
-  <script src="task5.js"></script>
+    <title>Document</title>
+  </head>
 
-  <title>Document</title>
+  <body>
+    <h1>Homework#1</h1>
 
-</head>
+    <h2>Do you wanna know time?</h2>
+    <button onclick="whatTime()">Click</button>
+    <p id="time"></p>
 
-<body>
-  <h1>Homework#1</h1>
+    <h2>Calculations</h2>
+    <button onclick="calculate()">Go</button>
 
-  <h2>Do you wanna know time?</h2>
-  <button onclick="whatTime()">Click</button>
-  <p id="time"></p>
+    <div style="display: flex; align-items: center">
+      <div id="aLabel" hidden>A =</div>
+      <div id="a" style="width: 40px; height: 20px"></div>
+      <div>B =</div>
+      <div id="b" style="width: 40px; height: 20px"></div>
+    </div>
 
-  <h2>Calculations</h2>
-  <button onclick="calculate()">Go</button>
+    <div style="display: flex; align-items: center">
+      <div id>SUM =</div>
+      <div id="sum" style="width: 30px; height: 20px"></div>
+    </div>
+    <div style="display: flex; align-items: center">
+      <div>Difference =</div>
+      <div id="diff" style="width: 30px; height: 20px"></div>
+    </div>
+    <div style="display: flex; align-items: center">
+      <div>Product =</div>
+      <div id="product" style="width: 30px; height: 20px"></div>
+    </div>
+    <div style="display: flex; align-items: center">
+      <div>Share =</div>
+      <div id="share" style="width: 30px; height: 20px"></div>
+    </div>
 
-  <div style="display: flex; align-items: center;">
-    <div id = "aLabel" hidden>A = </div>
-    <div id="a" style="width: 40px; height: 20px;"></div>
-    <div>B = </div>
-    <div id="b" style="width: 40px; height: 20px;"></div>
-  </div>
+    <h2>Task 3</h2>
+    <button onclick="main()">Click and check Console</button>
 
-  <div style="display: flex; align-items: center;">
-    <div id>SUM = </div>
-    <div id="sum" style="width: 30px; height: 20px;"></div>
-  </div>
-  <div style="display: flex; align-items: center;">
-    <div>Difference = </div>
-    <div id="diff" style="width: 30px; height: 20px;"></div>
-  </div>
-  <div style="display: flex; align-items: center;">
-    <div>Product = </div>
-    <div id="product" style="width: 30px; height: 20px;"></div>
-  </div>
-  <div style="display: flex; align-items: center;">
-    <div>Share = </div>
-    <div id="share" style="width: 30px; height: 20px;"></div>
-  </div>
+    <h2>Task 4</h2>
+    <button onclick="switchValuation()">Your result</button>
+    <p id="result"></p>
 
-  <h2>Task 3</h2>
-  <button onclick="main()">Click and check Console</button>
-
-  <h2>Task 4</h2>
-  <button onclick="switchValuation()">Your result</button>
-  <p id="result"></p>
-
-  <h2>Task 5</h2>
-  <button onclick="loop()">Lets Go</button>
-</body>
-
+    <h2>Task 5</h2>
+    <button onclick="loop()">Lets Go</button>
+  </body>
 </html>

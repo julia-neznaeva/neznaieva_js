@@ -26,24 +26,16 @@ const cart = [
   { id: 2, name: "Smartphone", price: 800, quantity: 2 },
 ];
 
-async () => {
-  console.log(
-    await updateCart(cart, {
-      id: 2,
-      name: "Smartphone",
-      price: 800,
-      quantity: 1,
-    })
-  );
-};
+updateCart(cart, {
+  id: 2,
+  name: "Smartphone",
+  price: 800,
+  quantity: 1,
+}).then((result) => console.log(result));
 
-async () => {
-  console.log(
-    await updateCart(cart, {
-      id: 3,
-      name: "Tablet",
-      price: 600,
-      quantity: 1,
-    })
-  );
-};
+updateCart(cart, {
+  id: 3,
+  name: "Tablet",
+  price: 600,
+  quantity: 1,
+}).then((result) => console.log(result));
